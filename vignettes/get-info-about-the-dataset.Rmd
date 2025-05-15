@@ -31,7 +31,7 @@ library(squirrels)
 This function admits 1 parameter: 
 - `df` Dataframe.
 It returns a message in the console
- 
+
   
 ```{r example-get_df_nrows}
 get_df_nrows(df = iris)
@@ -40,7 +40,4 @@ get_df_nrows(df = mtcars)
 
   
   
-
-
-
 

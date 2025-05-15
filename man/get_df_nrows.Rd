@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_df_nrows.R
 \name{get_df_nrows}
 \alias{get_df_nrows}
-\title{Get a message with a number of rows in a data frame of interest}
+\title{get_df_nrows}
 \usage{
 get_df_nrows(df)
 }
@@ -10,7 +10,7 @@ get_df_nrows(df)
 \item{df}{Dataframe}
 }
 \value{
-It returns a message in the console
+the number of rows + a message in the console
 }
 \description{
 Get a message with a number of rows in a data frame of interest

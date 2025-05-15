@@ -16,6 +16,7 @@ a vector of logicals
 Check the values of primary fur color
 }
 \examples{
-check_plus_in_primary_fur_color(primary_fur_color = c("Grey","Cinnamon"))
-check_plus_in_primary_fur_color(primary_fur_color = c("Grey","Cinnamon+Black"))
+
+check_plus_in_primary_fur_color(primary_fur_color = c("Black", "Black+Cinnamon", "Cinnamon", NA))
+
 }

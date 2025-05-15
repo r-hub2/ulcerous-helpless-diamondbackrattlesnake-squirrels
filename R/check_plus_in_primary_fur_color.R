@@ -7,15 +7,16 @@
 #' @importFrom stringr str_detect
 #' @export
 #' @examples
-#' check_plus_in_primary_fur_color(primary_fur_color = c("Grey","Cinnamon"))
-#' check_plus_in_primary_fur_color(primary_fur_color = c("Grey","Cinnamon+Black"))
+#'
+#' check_plus_in_primary_fur_color(primary_fur_color = c("Black", "Black+Cinnamon", "Cinnamon", NA))
+#'
 check_plus_in_primary_fur_color <- function(primary_fur_color) {
   
-  if (isFALSE(is.character(primary_fur_color))){
-    stop("primary_fur_color must be a character")
+  if (isFALSE(is.character(primary_fur_color))) {
+    stop("primary_fur_color should be a character")
   }
   
-  
   colors_are_ok <- !str_detect(string = primary_fur_color, pattern = "\\+")
+  
   return(colors_are_ok)
 }

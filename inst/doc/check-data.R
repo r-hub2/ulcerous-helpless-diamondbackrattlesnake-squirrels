@@ -8,8 +8,9 @@ knitr::opts_chunk$set(
 library(squirrels)
 
 ## ----example-check_plus_in_primary_fur_color----------------------------------
-check_plus_in_primary_fur_color(primary_fur_color = c("Grey","Cinnamon"))
-check_plus_in_primary_fur_color(primary_fur_color = c("Grey","Cinnamon+Black"))
+
+check_plus_in_primary_fur_color(primary_fur_color = c("Black", "Black+Cinnamon", "Cinnamon", NA))
+
 
 ## ----example-check_coordinates------------------------------------------------
 both_valid_latitude <- c(40.766, 40.799)
